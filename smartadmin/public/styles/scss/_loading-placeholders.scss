@@ -1,0 +1,30 @@
+//@import "lib/bootstrap/mixins";
+// flashing content
+.placeholder-header {
+    display: block;
+    height: 49px;
+    margin: 0;
+    padding: 0 13px 0 0;
+    background-color: rgb(243, 243, 243);
+    @include gradient-vertical(rgb(243, 243, 243), rgb(226, 226, 226));
+}
+
+
+
+.placeholder-left-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 904;
+    margin-top: 49px;
+    width: 220px;
+    display: block;
+    background: rgb(58, 54, 51);
+    @include gradient-horizontal(rgb(58, 54, 51), rgb(42, 39, 37), 93%, 100% );
+    min-height: 100%;
+}
+
+
+.placeholder-live-feeds{
+    height: 386px;
+}

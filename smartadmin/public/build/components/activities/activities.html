@@ -1,0 +1,32 @@
+<span id="activity" class="activity-dropdown" activities-dropdown-toggle> 
+   <i class="fa fa-user"></i> 
+   <b class="badge bg-color-red">21</b> 
+</span>
+
+<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+<div class="ajax-dropdown" ng-controller="ActivitiesCtrl as activitiesDropdown" >
+
+   <div class="btn-group btn-group-justified" data-toggle="buttons">
+      <label class="btn btn-default" ng-class="{active : isActive(type.name)}" \
+               ng-repeat="(key, type) in activities.types" ng-click="setTab(type.name)">
+         <input type="radio" name="activity">
+         {{type.title}} ({{type.length}}) 
+      </label>
+   </div>
+
+   <!-- notification content -->
+   <div class="ajax-notifications custom-scroll">
+         <ng-include src="template_url"></ng-include>
+   </div>
+   <!-- end notification content -->
+
+   <!-- footer: refresh area -->
+   <span> Last updated on: {{activities.last_update}}
+      <button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+         <i class="fa fa-refresh"></i>
+      </button> 
+   </span>
+   <!-- end footer -->
+
+</div>
+<!-- END AJAX-DROPDOWN -->

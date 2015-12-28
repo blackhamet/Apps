@@ -1,0 +1,209 @@
+$speed: 500ms;
+
+.anim-in-out {
+
+  &.anim-in-setup {
+
+    &.anim-swap, .anim-swap {
+    }
+
+    &.anim-fade, .anim-fade {
+      opacity: 0;
+    }
+
+    &.anim-slide-left, .anim-slide-left {
+      @include transform(translateX(100%));
+    }
+
+    &.anim-slide-right, .anim-slide-right {
+      @include transform(translateX(-100%));
+    }
+
+    &.anim-slide-below, .anim-slide-below {
+      @include transform(translateY(20px));
+    }
+
+    &.anim-slide-below-fade, .anim-slide-below-fade {
+      opacity: 0;
+      @include transform(translateY(20px));
+    }
+
+    &.anim-zoom-out, .anim-zoom-out {
+      @include transform(scale(0.95));
+    }
+
+    &.anim-zoom-in, .anim-zoom-in {
+      @include transform(scale(1.025));
+    }
+
+    &.anim-zoom-out-full, .anim-zoom-out-full {
+      @include transform(scale(0));
+    }
+
+    &.anim-zoom-in-full, .anim-zoom-in-full {
+      @include transform(scale(10));
+    }
+
+  }
+
+  &.anim-in {
+
+    &.anim-swap, .anim-swap {
+    }
+
+    &.anim-fade, .anim-fade {
+      opacity: 1;
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-left, .anim-slide-left {
+      @include transform(translateX(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-right, .anim-slide-right {
+      @include transform(translateX(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below, .anim-slide-below {
+      @include transform(translateY(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below-fade, .anim-slide-below-fade {
+      opacity: 1;
+      @include transform(translateY(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out, .anim-zoom-out {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in, .anim-zoom-in {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out-full, .anim-zoom-out-full {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in-full, .anim-zoom-in-full {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+  }
+
+  &.anim-out-setup {
+
+    &.anim-swap, .anim-swap {
+    }
+
+    &.anim-fade, .anim-fade {
+      opacity: 1;
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-left, .anim-slide-left {
+      @include transform(translateX(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-right, .anim-slide-right {
+      @include transform(translateX(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below, .anim-slide-below {
+      @include transform(translateY(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below-fade, .anim-slide-below-fade {
+      opacity: 1;
+      @include transform(translateY(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out, .anim-zoom-out {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in, .anim-zoom-in {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out-full, .anim-zoom-out-full {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in-full, .anim-zoom-in-full {
+      @include transform(scale(1));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+  }
+
+  &.anim-out {
+
+    &.anim-swap, .anim-swap {
+      display: none;
+    }
+
+    &.anim-fade, .anim-fade {
+      opacity: 0;
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-left, .anim-slide-left {
+      @include transform(translateX(-100%));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-right, .anim-slide-right {
+      @include transform(translateX(100%));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below, .anim-slide-below {
+      @include transform(translateY(20px));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-slide-below-fade, .anim-slide-below-fade {
+      opacity: 0;
+      @include transform(translateY(20px));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out, .anim-zoom-out {
+      @include transform(scale(0.95));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in, .anim-zoom-in {
+      @include transform(scale(1.025));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-out-full, .anim-zoom-out-full {
+      @include transform(scale(0));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+    &.anim-zoom-in-full, .anim-zoom-in-full {
+      @include transform(scale(10));
+      @include transition-transform($speed ease-in-out, opacity $speed ease-in-out);
+    }
+
+  }
+
+}

@@ -1,0 +1,92 @@
+@mixin loader($loader-color, $z: 200) {
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+
+		@include opacity(0);
+		@include transition(opacity .2s ease-in-out);
+		&.loading, &.loading.half-loading {
+          background: rgba(white, .5);
+			@include opacity(1);
+			z-index: $z;
+		}
+		&.half-loading {
+          background: rgba(white, .5);
+			@include opacity(.5);
+			z-index: $z;
+		}
+
+	}
+	.loader {
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		top: 50%;
+		z-index: -1;
+		@include transform(translateY(-50%));
+		@include transition(opacity .2s ease-in-out);
+		@include opacity(0);
+		&.loading {
+			@include opacity(1);
+			z-index: $z + 1;
+		}
+		.outer-circle {
+			background-color: transparent;
+			border-top: 1px solid rgba($loader-color, 0.8);
+			border-right: 2px solid rgba(0, 0, 0, 0);
+			border-bottom: 2px solid rgba($loader-color, 0.8);
+			border-left: 2px solid rgba(0, 0, 0, 0);
+			@include opacity(.9);
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			@include animation(spin-pulse 3s infinite ease-in-out)
+		}
+
+		.inner-circle {
+			background-color: transparent;
+			border-top: 1px solid rgba($loader-color, 0.6);
+			border-right: 3px solid rgba(0, 0, 0, 0);
+			border-bottom: 2px solid rgba($loader-color, 0.6);
+			border-left: 2px solid rgba(0, 0, 0, 0);
+			@include opacity(.9);
+			border-radius: 100px;
+			top: -46px;
+			width: 40px;
+			height: 40px;
+			margin: 0 auto;
+			position: relative;
+			@include animation(spinnoff-pulse 1s infinite linear);
+		}
+	}
+
+	@include keyframes(spin-pulse) {
+		0% {
+			@include rotate(160deg);
+			opacity: 0;
+			@include box-shadow(0 0 1px $loader-color);
+		}
+		50% {
+			@include rotate(145deg);
+			opacity: 1;
+		}
+		100% {
+			@include rotate(-320deg);
+			opacity: 0;
+		}
+	}
+
+	@include keyframes(spinnoff-pulse) {
+		0% {
+			@include rotate(0deg);
+		}
+		100% {
+			@include rotate(360deg);
+		}
+	}
+}

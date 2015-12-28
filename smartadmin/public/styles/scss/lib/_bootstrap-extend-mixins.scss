@@ -1,0 +1,178 @@
+// css3
+@mixin transform-style($style: preserve-3d) {
+	-webkit-transform-style: $style;
+	-moz-transform-style: $style;
+	-ms-transform-style: $style;
+	-o-transform-style: $style;
+	transform-style: $style;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-ms-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+// layout
+@mixin sticky-footer($height) {
+	html {
+		min-height: 100%;
+		position: relative;
+		overflow-y: scroll;
+	}
+
+	body {
+		overflow: hidden;
+		margin: 0 0 $height;
+	}
+
+	footer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: $height;
+		width: 100%;
+	}
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@-o-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@mixin respond-to($media) {
+	@if $media == xs {
+		@media only screen and (min-width: $screen-xs-min) {
+			@content;
+		}
+	} @else if $media == sm {
+		@media only screen and (min-width: $screen-sm-min) {
+			@content;
+		}
+	} @else if $media == md {
+		@media only screen and (min-width: $screen-md-min) {
+			@content;
+		}
+	} @else if $media == lg {
+		@media only screen and (min-width: $screen-lg-min) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-to-only($media) {
+	@if $media == xs {
+		@media only screen and (max-width: $screen-sm-min - 1) {
+			@content;
+		}
+	} @else if $media == xs {
+		@media only screen and (max-width: $screen-md-min - 1) {
+			@content;
+		}
+	} @else if $media == md {
+		@media only screen and (max-width: $screen-lg-min - 1) {
+			@content;
+		}
+	}
+}
+
+@mixin selection($selection-background, $selection-front: #fff) {
+	::selection {
+		background-color: $selection-background;
+		color: $selection-front;
+	}
+	::-moz-selection {
+		background-color: $selection-background;
+		color: $selection-front;
+	}
+}
+
+@mixin caret($direction, $color, $activeColor: $color, $size: 3px) {
+	&:after {
+		position: absolute;
+		content: '';
+		right: $size;
+		top: 50%;
+		margin-top: - $size/2;
+		width: $size*2;
+		height: $size*2;
+		border-color: transparent;
+		border-style: solid;
+		@if $direction == left {
+			border-left-color: transparent;
+			border-top: $size solid $color;
+			@include respond-to(sm) {
+				border-top-color: transparent;
+				border-left: $size solid $color;
+			}
+		} @else {
+			border-#{$direction}: $size solid $color;
+		}
+	}
+	@include respond-to(md) {
+		$size: $size * 1.2;
+		&:after {
+			right: $size;
+			margin-top: - $size/2;
+			width: $size*2;
+			height: $size*2;
+			border-color: transparent;
+			border-#{$direction}: $size solid $color;
+		}
+	}
+	&:hover, &.active {
+		&:after {
+			@if $direction == left {
+				border-left-color: transparent;
+				border-top: $size solid $activeColor;
+				@include respond-to(sm) {
+					border-top-color: transparent;
+					border-left: $size solid $activeColor;
+				}
+			} @else {
+				border-#{$direction}: $size solid $activeColor;
+			}
+		}
+	}
+}
+
+@mixin link-color($color, $hover: $color){
+	&, &:visited{
+		color: $color;
+	}
+	&:hover, &:active, &:focus {
+		color: $hover;
+	}
+}
+
+@mixin no-decoration{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+

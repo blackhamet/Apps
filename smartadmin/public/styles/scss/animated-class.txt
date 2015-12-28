@@ -1,0 +1,70 @@
+.animated 
+
+.animated.fast 
+
+.animated.hinge @-webkit-keyframes flash25%,75%}@-moz-keyframes flash25%,75%}@-o-keyframes flash25%,75%}@keyframes flash25%,75%}
+.animated.flash @-webkit-keyframes shake10%,30%,50%,70%,90%20%,40%,60%,80%}@-moz-keyframes shake10%,30%,50%,70%,90%20%,40%,60%,80%}@-o-keyframes shake10%,30%,50%,70%,90%20%,40%,60%,80%}@keyframes shake10%,30%,50%,70%,90%20%,40%,60%,80%}
+.animated.shake @-webkit-keyframes bounce40%60%}@-moz-keyframes bounce40%60%}@-o-keyframes bounce40%60%}@keyframes bounce40%60%}
+.animated.bounce @-webkit-keyframes tada10%,20%30%,50%,70%,90%40%,60%,80%100%}@-moz-keyframes tada10%,20%30%,50%,70%,90%40%,60%,80%100%}@-o-keyframes tada10%,20%30%,50%,70%,90%40%,60%,80%100%}@keyframes tada10%,20%30%,50%,70%,90%40%,60%,80%100%}
+.animated.tada @-webkit-keyframes swing20%40%60%80%100%}@-moz-keyframes swing40%60%80%100%}@-o-keyframes swing40%60%80%100%}@keyframes swing40%60%80%100%}
+.animated.swing @-webkit-keyframes wobble15%30%45%60%75%100%}@-moz-keyframes wobble15%30%45%60%75%100%}@-o-keyframes wobble15%30%45%60%75%100%}@keyframes wobble15%30%45%60%75%100%}
+.animated.wobble @-webkit-keyframes pulse50%100%}@-moz-keyframes pulse50%100%}@-o-keyframes pulse50%100%}@keyframes pulse50%100%}
+.animated.pulse @-webkit-keyframes flip40%50%80%100%}@-moz-keyframes flip40%50%80%100%}@-o-keyframes flip40%50%80%100%}@keyframes flip40%50%80%100%}
+.animated.flip @-webkit-keyframes flipInX40%70%100%}@-moz-keyframes flipInX40%70%100%}@-o-keyframes flipInX40%70%100%}@keyframes flipInX40%70%100%}
+.animated.flipInX @-webkit-keyframes flipOutX100%}@-moz-keyframes flipOutX100%}@-o-keyframes flipOutX100%}@keyframes flipOutX100%}
+.animated.flipOutX @-webkit-keyframes flipInY40%70%100%}@-moz-keyframes flipInY40%70%100%}@-o-keyframes flipInY40%70%100%}@keyframes flipInY40%70%100%}
+.animated.flipInY @-webkit-keyframes flipOutY100%}@-moz-keyframes flipOutY100%}@-o-keyframes flipOutY100%}@keyframes flipOutY100%}
+.animated.flipOutY @-webkit-keyframes fadeIn100%}@-moz-keyframes fadeIn100%}@-o-keyframes fadeIn100%}@keyframes fadeIn100%}
+.animated.fadeIn @-webkit-keyframes fadeInUp100%}@-moz-keyframes fadeInUp100%}@-o-keyframes fadeInUp100%}@keyframes fadeInUp100%}
+.animated.fadeInUp @-webkit-keyframes fadeInDown100%}@-moz-keyframes fadeInDown100%}@-o-keyframes fadeInDown100%}@keyframes fadeInDown100%}
+.animated.fadeInDown @-webkit-keyframes fadeInLeft100%}@-moz-keyframes fadeInLeft100%}@-o-keyframes fadeInLeft100%}@keyframes fadeInLeft100%}
+.animated.fadeInLeft @-webkit-keyframes fadeInRight100%}@-moz-keyframes fadeInRight100%}@-o-keyframes fadeInRight100%}@keyframes fadeInRight100%}
+.animated.fadeInRight @-webkit-keyframes fadeInUpBig100%}@-moz-keyframes fadeInUpBig100%}@-o-keyframes fadeInUpBig100%}@keyframes fadeInUpBig100%}
+.animated.fadeInUpBig @-webkit-keyframes fadeInDownBig100%}@-moz-keyframes fadeInDownBig100%}@-o-keyframes fadeInDownBig100%}@keyframes fadeInDownBig100%}
+.animated.fadeInDownBig @-webkit-keyframes fadeInLeftBig100%}@-moz-keyframes fadeInLeftBig100%}@-o-keyframes fadeInLeftBig100%}@keyframes fadeInLeftBig100%}
+.animated.fadeInLeftBig @-webkit-keyframes fadeInRightBig100%}@-moz-keyframes fadeInRightBig100%}@-o-keyframes fadeInRightBig100%}@keyframes fadeInRightBig100%}
+.animated.fadeInRightBig @-webkit-keyframes fadeOut100%}@-moz-keyframes fadeOut100%}@-o-keyframes fadeOut100%}@keyframes fadeOut100%}
+.animated.fadeOut @-webkit-keyframes fadeOutUp100%}@-moz-keyframes fadeOutUp100%}@-o-keyframes fadeOutUp100%}@keyframes fadeOutUp100%}
+.animated.fadeOutUp @-webkit-keyframes fadeOutDown100%}@-moz-keyframes fadeOutDown100%}@-o-keyframes fadeOutDown100%}@keyframes fadeOutDown100%}
+.animated.fadeOutDown @-webkit-keyframes fadeOutLeft100%}@-moz-keyframes fadeOutLeft100%}@-o-keyframes fadeOutLeft100%}@keyframes fadeOutLeft100%}
+.animated.fadeOutLeft @-webkit-keyframes fadeOutRight100%}@-moz-keyframes fadeOutRight100%}@-o-keyframes fadeOutRight100%}@keyframes fadeOutRight100%}
+.animated.fadeOutRight @-webkit-keyframes fadeOutUpBig100%}@-moz-keyframes fadeOutUpBig100%}@-o-keyframes fadeOutUpBig100%}@keyframes fadeOutUpBig100%}
+.animated.fadeOutUpBig @-webkit-keyframes fadeOutDownBig100%}@-moz-keyframes fadeOutDownBig100%}@-o-keyframes fadeOutDownBig100%}@keyframes fadeOutDownBig100%}
+.animated.fadeOutDownBig @-webkit-keyframes fadeOutLeftBig100%}@-moz-keyframes fadeOutLeftBig100%}@-o-keyframes fadeOutLeftBig100%}@keyframes fadeOutLeftBig100%}
+.animated.fadeOutLeftBig @-webkit-keyframes fadeOutRightBig100%}@-moz-keyframes fadeOutRightBig100%}@-o-keyframes fadeOutRightBig100%}@keyframes fadeOutRightBig100%}
+.animated.fadeOutRightBig @-webkit-keyframes bounceIn50%70%100%}@-moz-keyframes bounceIn50%70%100%}@-o-keyframes bounceIn50%70%100%}@keyframes bounceIn50%70%100%}@-webkit-keyframes slideInDown100%}@-moz-keyframes slideInDown100%}@-o-keyframes slideInDown100%}@keyframes slideInDown100%}
+.slideInDown @-webkit-keyframes slideInLeft100%}@-moz-keyframes slideInLeft100%}@-o-keyframes slideInLeft100%}@keyframes slideInLeft100%}
+.slideInLeft @-webkit-keyframes slideInRight100%}@-moz-keyframes slideInRight100%}@-o-keyframes slideInRight100%}@keyframes slideInRight100%}
+.slideInRight @-webkit-keyframes slideOutLeft100%}@-moz-keyframes slideOutLeft100%}@-o-keyframes slideOutLeft100%}@keyframes slideOutLeft100%}
+.slideOutLeft @-webkit-keyframes slideOutRight100%}@-moz-keyframes slideOutRight100%}@-o-keyframes slideOutRight100%}@keyframes slideOutRight100%}
+.slideOutRight @-webkit-keyframes slideOutUp100%}@-moz-keyframes slideOutUp100%}@-o-keyframes slideOutUp100%}@keyframes slideOutUp100%}
+.slideOutUp 
+.animated.bounceIn @-webkit-keyframes bounceInUp60%80%100%}@-moz-keyframes bounceInUp60%80%100%}@-o-keyframes bounceInUp60%80%100%}@keyframes bounceInUp60%80%100%}
+.animated.bounceInUp @-webkit-keyframes bounceInDown60%80%100%}@-moz-keyframes bounceInDown60%80%100%}@-o-keyframes bounceInDown60%80%100%}@keyframes bounceInDown60%80%100%}
+.animated.bounceInDown @-webkit-keyframes bounceInLeft60%80%100%}@-moz-keyframes bounceInLeft60%80%100%}@-o-keyframes bounceInLeft60%80%100%}@keyframes bounceInLeft60%80%100%}
+.animated.bounceInLeft @-webkit-keyframes bounceInRight60%80%100%}@-moz-keyframes bounceInRight60%80%100%}@-o-keyframes bounceInRight60%80%100%}@keyframes bounceInRight60%80%100%}
+.animated.bounceInRight @-webkit-keyframes bounceOut25%50%100%}@-moz-keyframes bounceOut25%50%100%}@-o-keyframes bounceOut25%50%100%}@keyframes bounceOut25%50%100%}
+.animated.bounceOut @-webkit-keyframes bounceOutUp20%100%}@-moz-keyframes bounceOutUp20%100%}@-o-keyframes bounceOutUp20%100%}@keyframes bounceOutUp20%100%}
+.animated.bounceOutUp @-webkit-keyframes bounceOutDown20%100%}@-moz-keyframes bounceOutDown20%100%}@-o-keyframes bounceOutDown20%100%}@keyframes bounceOutDown20%100%}
+.animated.bounceOutDown @-webkit-keyframes bounceOutLeft20%100%}@-moz-keyframes bounceOutLeft20%100%}@-o-keyframes bounceOutLeft20%100%}@keyframes bounceOutLeft20%100%}
+.animated.bounceOutLeft @-webkit-keyframes bounceOutRight20%100%}@-moz-keyframes bounceOutRight20%100%}@-o-keyframes bounceOutRight20%100%}@keyframes bounceOutRight20%100%}
+.animated.bounceOutRight @-webkit-keyframes rotateIn100%}@-moz-keyframes rotateIn100%}@-o-keyframes rotateIn100%}@keyframes rotateIn100%}
+.animated.rotateIn @-webkit-keyframes rotateInUpLeft100%}@-moz-keyframes rotateInUpLeft100%}@-o-keyframes rotateInUpLeft100%}@keyframes rotateInUpLeft100%}
+.animated.rotateInUpLeft @-webkit-keyframes rotateInDownLeft100%}@-moz-keyframes rotateInDownLeft100%}@-o-keyframes rotateInDownLeft100%}@keyframes rotateInDownLeft100%}
+.animated.rotateInDownLeft @-webkit-keyframes rotateInUpRight100%}@-moz-keyframes rotateInUpRight100%}@-o-keyframes rotateInUpRight100%}@keyframes rotateInUpRight100%}
+.animated.rotateInUpRight @-webkit-keyframes rotateInDownRight100%}@-moz-keyframes rotateInDownRight100%}@-o-keyframes rotateInDownRight100%}@keyframes rotateInDownRight100%}
+.animated.rotateInDownRight @-webkit-keyframes rotateOut100%}@-moz-keyframes rotateOut100%}@-o-keyframes rotateOut100%}@keyframes rotateOut100%}
+.animated.rotateOut @-webkit-keyframes rotateOutUpLeft100%}@-moz-keyframes rotateOutUpLeft100%}@-o-keyframes rotateOutUpLeft100%}@keyframes rotateOutUpLeft100%}
+.animated.rotateOutUpLeft @-webkit-keyframes rotateOutDownLeft100%}@-moz-keyframes rotateOutDownLeft100%}@-o-keyframes rotateOutDownLeft100%}@keyframes rotateOutDownLeft100%}
+.animated.rotateOutDownLeft @-webkit-keyframes rotateOutUpRight100%}@-moz-keyframes rotateOutUpRight100%}@-o-keyframes rotateOutUpRight100%}@keyframes rotateOutUpRight100%}
+.animated.rotateOutUpRight @-webkit-keyframes rotateOutDownRight100%}@-moz-keyframes rotateOutDownRight100%}@-o-keyframes rotateOutDownRight100%}@keyframes rotateOutDownRight100%}
+.animated.rotateOutDownRight @-webkit-keyframes hinge20%,60%40%80%100%}@-moz-keyframes hinge20%,60%40%80%100%}@-o-keyframes hinge20%,60%40%80%100%}@keyframes hinge20%,60%40%80%100%}
+.animated.hinge @-webkit-keyframes rollIn100%}@-moz-keyframes rollIn100%}@-o-keyframes rollIn100%}@keyframes rollIn100%}
+.animated.rollIn @-webkit-keyframes rollOut100%}@-moz-keyframes rollOut100%}@-o-keyframes rollOut100%}@keyframes rollOut100%}
+.animated.rollOut @-webkit-keyframes lightSpeedIn60%80%100%}@-moz-keyframes lightSpeedIn60%80%100%}@-o-keyframes lightSpeedIn60%80%100%}@keyframes lightSpeedIn60%80%100%}
+.animated.lightSpeedIn 
+.animated.lightSpeedIn @-webkit-keyframes lightSpeedOut100%}@-moz-keyframes lightSpeedOut100%}@-o-keyframes lightSpeedOut100%}@keyframes lightSpeedOut100%}
+.animated.lightSpeedOut 
+.animated.lightSpeedOut 
+.fade 
+@-moz-keyframes spin100%}@-webkit-keyframes spin100%}@-o-keyframes spin100%}@-ms-keyframes spin100%}@keyframes spin100%}
